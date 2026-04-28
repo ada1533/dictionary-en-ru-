@@ -1,0 +1,93 @@
+.dictionary_page {
+  display: grid;
+  gap: 1rem;
+}
+
+.dictionary-panel {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.dictionary-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.75rem;
+}
+
+.dictionary-input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  padding: 0.68rem 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  background: #fff;
+}
+
+.dictionary-input::placeholder {
+  color: #8b94b6;
+}
+
+.dictionary-input:focus-visible {
+  outline: 2px solid #9eacff;
+  outline-offset: 1px;
+}
+
+.dictionary-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.55rem;
+}
+
+.dictionary-button {
+  border: 1px solid #cad3f5;
+  background: #fff;
+  color: #243055;
+  border-radius: 0.6rem;
+  padding: 0.58rem 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.16s ease;
+}
+
+.dictionary-button:hover {
+  background: #edf1ff;
+}
+
+.dictionary-button:focus-visible {
+  outline: 2px solid #94a3ff;
+  outline-offset: 2px;
+}
+
+.dictionary-button.primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.dictionary-button.primary:hover {
+  background: var(--primary-hover);
+}
+
+.dictionary-button.danger {
+  border-color: #f0c5c5;
+  color: #922f2f;
+}
+
+.dictionary-button.danger:hover {
+  background: #fef1f1;
+  border-color: #ebb0b0;
+}
+
+.dictionary-result {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  background: #fafbff;
+  min-height: 150px;
+  max-height: 340px;
+  overflow: auto;
+  padding: 0.85rem;
+  line-height: 1.45;
+  color: #202b4b;
+}

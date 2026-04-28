@@ -1,0 +1,56 @@
+.nav {
+  width: min(1040px, calc(100% - 2rem));
+  margin: 1rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(31, 56, 130, 0.16);
+}
+
+.nav-brand {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #1b2440;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  border: 1px solid #d8def4;
+  background: #fff;
+  color: #1d294a;
+  padding: 0.42rem 0.85rem;
+  border-radius: 0.55rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.nav-button:hover {
+  background: #4563ff;
+  color: #fff;
+  border-color: #4563ff;
+}
+
+.nav-button:focus-visible {
+  outline: 2px solid #94a3ff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
